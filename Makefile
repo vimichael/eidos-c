@@ -3,3 +3,7 @@ default:
 
 run:
 	cd build && prime-run ./main
+
+shader:
+	./sokol-shdc --input assets/shaders/triangle.glsl --output triangle_shader.h --slang glsl430:hlsl5:metal_macos
+
