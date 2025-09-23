@@ -60,7 +60,7 @@ void event(const sapp_event *ev) {}
 int main() {
 
   sapp_run(&(sapp_desc){
-      .width = 1280,
+      .width = 720,
       .height = 720,
       .init_cb = init,
       .frame_cb = frame,
