@@ -1,3 +1,6 @@
 [submodule "vendor/sokol"]
 	path = vendor/sokol
 	url = https://github.com/floooh/sokol.git
+[submodule "vendor/cglm"]
+	path = vendor/cglm
+	url = https://github.com/recp/cglm.git

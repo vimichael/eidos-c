@@ -1,3 +1,6 @@
+@header #include "cglm/cglm.h"
+@ctype mat4 mat4
+
 @vs vertex_shader
 
 in vec3 pos;
@@ -5,8 +8,12 @@ in vec3 color;
 
 out vec3 out_color;
 
+layout(binding=0) uniform triangle_params {
+  mat4 mvp;
+};
+
 void main() {
-  gl_Position = vec4(pos, 1.0);
+  gl_Position = mvp * vec4(pos, 1.0);
   out_color = color;
 }
 
