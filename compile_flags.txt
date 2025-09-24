@@ -1,0 +1,2 @@
+-std=c2x
+-Ivendor/cglm/include
